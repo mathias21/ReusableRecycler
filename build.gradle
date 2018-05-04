@@ -1,0 +1,36 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.2.41'
+    ext.dokka_version = '0.9.16'
+    ext.android_maven_plugin_version = '2.1'
+    ext.gradle_bintray_version = '1.7.3'
+    ext.robolectric = "3.8"
+    ext.mockito = "2.12.0"
+    ext.assertJ = "3.8.0"
+    ext.support_version = "26.1.0"
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.dokka:dokka-gradle-plugin:$dokka_version"
+        classpath "com.github.dcendents:android-maven-gradle-plugin:$android_maven_plugin_version"
+        classpath "com.jfrog.bintray.gradle:gradle-bintray-plugin:$gradle_bintray_version"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
