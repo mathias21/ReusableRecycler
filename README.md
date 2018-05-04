@@ -11,8 +11,15 @@ It can be used as a standard solution to manage elements in your app, as edit an
 
 ### Import the library
 
-Gradle dependency
+Gradle setup
+```
+buildscript {
+    repositories {
+        jcenter()
+    }
+}
 
+```
 ```
 compile 'com.rego.jorge.reusablerecycler:reusablerecycler:$latest_version'
 ```
