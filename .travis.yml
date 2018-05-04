@@ -27,7 +27,7 @@ before_install:
 
 script:
   - . ./ci/prepare_env.sh
-  - ./ci/build.sh
+  - . ./ci/build.sh
 
 after_success:
   # Nothing to do here so far
