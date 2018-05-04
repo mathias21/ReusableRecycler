@@ -11,7 +11,7 @@ It can be used as a standard solution to manage elements in your app, as edit an
 
 ### Import the library
 
-Gradle setup
+Gradle setup in your main build.gradle
 ```
 buildscript {
     repositories {
@@ -20,6 +20,7 @@ buildscript {
 }
 
 ```
+Gradle setup in your module build.gradle
 ```
 compile 'com.rego.jorge.reusablerecycler:reusablerecycler:$latest_version'
 ```
