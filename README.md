@@ -5,7 +5,7 @@
 ReusableRecycler is a library that allows you to leverage most of the boilerplate code you need to implement to use recycler views. This is not intended to fully replace Recycler views and Adapters, but to go faster in those easy to handle situations.
 It can be used as a standard solution to manage elements in your app, as edit and remove icons/callbacks are included if ::onEdit, ::onRemove function references are provided. These will be visible after user swipes right.
 
-<img src="reusablerecycler/screenshots/video.gif" width="250">
+<img src="reusablerecycler/screenshots/video.gif" width="250"> 
 
 ## Getting Started
 
