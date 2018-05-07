@@ -1,4 +1,4 @@
-package com.rego.jorge.reusablerecyclerlib.adapter
+package com.rego.jorge.reusablerecycler.adapter
 
 import android.support.v7.widget.RecyclerView
 import android.view.View

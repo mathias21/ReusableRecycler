@@ -1,4 +1,4 @@
-package com.rego.jorge.reusablerecycler.ui
+package com.rego.jorge.reusablerecyclersample.ui
 
 import android.os.Bundle
 import android.support.v4.content.ContextCompat
@@ -6,9 +6,9 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.Toast
 import com.rego.jorge.reusablerecycler.R
-import com.rego.jorge.reusablerecyclerlib.extensions.invisible
-import com.rego.jorge.reusablerecyclerlib.extensions.visible
-import com.rego.jorge.reusablerecyclerlib.main.ReusableRecycler
+import com.rego.jorge.reusablerecycler.extensions.invisible
+import com.rego.jorge.reusablerecycler.extensions.visible
+import com.rego.jorge.reusablerecycler.main.ReusableRecycler
 import kotlinx.android.synthetic.main.activity_sample.*
 import kotlinx.android.synthetic.main.item_sample_row2.view.*
 

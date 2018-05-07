@@ -34,5 +34,5 @@ dependencies {
     testImplementation "org.robolectric:robolectric:$robolectric"
     testImplementation "org.mockito:mockito-core:$mockito"
     testImplementation "org.assertj:assertj-core:$assertJ"
-    implementation project(':reusablerecyclerlib')
+    implementation project(':reusablerecycler')
 }

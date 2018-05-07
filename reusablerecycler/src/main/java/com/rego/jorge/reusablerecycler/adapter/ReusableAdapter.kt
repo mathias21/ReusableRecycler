@@ -1,4 +1,4 @@
-package com.rego.jorge.reusablerecyclerlib.adapter
+package com.rego.jorge.reusablerecycler.adapter
 
 import android.content.res.ColorStateList
 import android.os.Handler
@@ -12,9 +12,9 @@ import android.view.animation.Animation
 import android.view.animation.AnimationSet
 import android.view.animation.TranslateAnimation
 import com.rego.jorge.reusablerecyclerlib.R
-import com.rego.jorge.reusablerecyclerlib.extensions.invisible
-import com.rego.jorge.reusablerecyclerlib.extensions.visible
-import com.rego.jorge.reusablerecyclerlib.main.ReusableRecycler
+import com.rego.jorge.reusablerecycler.extensions.invisible
+import com.rego.jorge.reusablerecycler.extensions.visible
+import com.rego.jorge.reusablerecycler.main.ReusableRecycler
 import kotlinx.android.synthetic.main.row_container_layout.view.*
 
 
