@@ -1,4 +1,4 @@
-[ ![Download](https://api.bintray.com/packages/mathias/maven/reusableRecycler/images/download.svg) ](https://bintray.com/mathias/maven/reusableRecycler/_latestVersion)
+[ ![Download](https://api.bintray.com/packages/mathias/maven/reusableRecycler/images/download.svg) ](https://bintray.com/mathias/maven/reusableRecycler/_latestVersion) [ ![Build](https://travis-ci.com/mathias21/ReusableRecycler.svg?branch=master) ](https://travis-ci.com/mathias21/ReusableRecycler.svg?branch=master)
 
 # ReusableRecycler
 
