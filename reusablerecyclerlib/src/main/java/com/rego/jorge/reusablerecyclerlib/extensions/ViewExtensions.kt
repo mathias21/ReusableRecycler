@@ -1,4 +1,4 @@
-package com.rego.jorge.reusablerecycler.extensions
+package com.rego.jorge.reusablerecyclerlib.extensions
 
 import android.view.View
 import android.view.View.*

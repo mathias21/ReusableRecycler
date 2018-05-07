@@ -33,4 +33,4 @@ script:
   - . ./ci/build.sh
 
 after_success:
-  # Nothing to do here so far
+  - . ./ci/deploy.sh

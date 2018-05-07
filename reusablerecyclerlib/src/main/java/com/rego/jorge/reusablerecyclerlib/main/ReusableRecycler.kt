@@ -1,4 +1,4 @@
-package com.rego.jorge.reusablerecycler.main
+package com.rego.jorge.reusablerecyclerlib.main
 
 import android.content.Context
 import android.support.annotation.ColorInt
@@ -10,11 +10,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
-import com.rego.jorge.reusablerecycler.adapter.ButtonsState
-import com.rego.jorge.reusablerecycler.adapter.ReusableAdapter
-import com.rego.jorge.reusablerecycler.adapter.SwipeController
-import com.rego.jorge.reusablerecycler.extensions.visible
-import com.rego.jorge.reusablerecycler.lib.R
+import com.rego.jorge.reusablerecyclerlib.R
+import com.rego.jorge.reusablerecyclerlib.adapter.ButtonsState
+import com.rego.jorge.reusablerecyclerlib.adapter.ReusableAdapter
+import com.rego.jorge.reusablerecyclerlib.adapter.SwipeController
+import com.rego.jorge.reusablerecyclerlib.extensions.visible
 import kotlinx.android.synthetic.main.reusable_recycler_frame.view.*
 
 

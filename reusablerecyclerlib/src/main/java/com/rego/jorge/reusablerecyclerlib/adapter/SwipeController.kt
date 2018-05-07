@@ -1,11 +1,11 @@
-package com.rego.jorge.reusablerecycler.adapter
+package com.rego.jorge.reusablerecyclerlib.adapter
 
 import android.graphics.Canvas
 import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.helper.ItemTouchHelper
 import android.support.v7.widget.helper.ItemTouchHelper.*
 import android.view.MotionEvent
-import com.rego.jorge.reusablerecycler.main.ReusableRecycler
+import com.rego.jorge.reusablerecyclerlib.main.ReusableRecycler
 
 
 /**

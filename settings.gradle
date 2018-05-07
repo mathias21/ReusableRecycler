@@ -1,1 +1,1 @@
-include ':app', ':reusablerecycler'
+include ':app', ':reusablerecyclerlib'

@@ -1,4 +1,4 @@
-package com.rego.jorge.reusablerecycler.adapter
+package com.rego.jorge.reusablerecyclerlib.adapter
 
 import android.content.res.ColorStateList
 import android.os.Handler
@@ -11,10 +11,10 @@ import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.AnimationSet
 import android.view.animation.TranslateAnimation
-import com.rego.jorge.reusablerecycler.extensions.invisible
-import com.rego.jorge.reusablerecycler.extensions.visible
-import com.rego.jorge.reusablerecycler.lib.R
-import com.rego.jorge.reusablerecycler.main.ReusableRecycler
+import com.rego.jorge.reusablerecyclerlib.R
+import com.rego.jorge.reusablerecyclerlib.extensions.invisible
+import com.rego.jorge.reusablerecyclerlib.extensions.visible
+import com.rego.jorge.reusablerecyclerlib.main.ReusableRecycler
 import kotlinx.android.synthetic.main.row_container_layout.view.*
 
 
@@ -31,7 +31,7 @@ class ReusableAdapter<S : Any>(
 ) : BaseAdapter<ReusableRecycler.ReusableItem<S>, ReusableAdapter<S>.ReusableViewHolder>() {
 
     companion object {
-        private const val SIDE_MARGIN = 24F
+        private const val SIDE_MARGIN = 16F
     }
 
     var selectedRow = -1
@@ -141,7 +141,7 @@ class ReusableAdapter<S : Any>(
         }
     }
 
-    fun getButtonWidth() = (onEdit?.let { 84F } ?: 0F) + (onRemove?.let { 84F }
+    fun getButtonWidth() = (onEdit?.let { 80F } ?: 0F) + (onRemove?.let { 80F }
             ?: 0F) + 2 * SIDE_MARGIN
 
     fun isItemSelected() = selectedRow != -1
