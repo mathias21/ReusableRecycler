@@ -10,7 +10,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
-import com.rego.jorge.reusablerecyclerlib.R
+import com.rego.jorge.reusablerecycler.R
 import com.rego.jorge.reusablerecycler.adapter.ButtonsState
 import com.rego.jorge.reusablerecycler.adapter.ReusableAdapter
 import com.rego.jorge.reusablerecycler.adapter.SwipeController

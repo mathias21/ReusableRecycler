@@ -5,7 +5,7 @@ import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.Toast
-import com.rego.jorge.reusablerecycler.R
+import com.rego.jorge.reusablerecyclersample.R
 import com.rego.jorge.reusablerecycler.extensions.invisible
 import com.rego.jorge.reusablerecycler.extensions.visible
 import com.rego.jorge.reusablerecycler.main.ReusableRecycler

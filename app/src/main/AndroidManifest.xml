@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.rego.jorge.reusablerecycler">
+    package="com.rego.jorge.reusablerecyclersample">
 
     <application
         android:allowBackup="true"

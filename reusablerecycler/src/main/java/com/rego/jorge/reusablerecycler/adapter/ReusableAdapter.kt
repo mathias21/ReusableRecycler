@@ -11,7 +11,7 @@ import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.AnimationSet
 import android.view.animation.TranslateAnimation
-import com.rego.jorge.reusablerecyclerlib.R
+import com.rego.jorge.reusablerecycler.R
 import com.rego.jorge.reusablerecycler.extensions.invisible
 import com.rego.jorge.reusablerecycler.extensions.visible
 import com.rego.jorge.reusablerecycler.main.ReusableRecycler
