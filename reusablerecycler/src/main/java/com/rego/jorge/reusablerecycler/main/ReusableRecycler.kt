@@ -21,7 +21,7 @@ import kotlinx.android.synthetic.main.reusable_recycler_frame.view.*
 /**
  * Created by jorge.rego.casas on 13/04/2018.
  */
-class ReusableRecycler<in S : Any>(
+class ReusableRecycler<in S : StableIdElement>(
         context: Context,
         frameLayout: FrameLayout,
         @LayoutRes private var rowLayoutResource: Int,
@@ -88,6 +88,10 @@ class ReusableRecycler<in S : Any>(
 
     fun getSelectedElementPosition() = reusableAdapter.selectedRow
 
-    data class ReusableItem<out S>(val item: S, var state: ButtonsState = ButtonsState.GONE, var swipeBack: Boolean = false)
+    data class ReusableItem<out S: StableIdElement>(val item: S, var state: ButtonsState = ButtonsState.GONE, var swipeBack: Boolean = false)
 
+}
+
+interface StableIdElement {
+    fun getReusableId(): Long
 }

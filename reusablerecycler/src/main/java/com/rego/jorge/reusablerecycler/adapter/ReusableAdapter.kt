@@ -15,20 +15,21 @@ import com.rego.jorge.reusablerecycler.R
 import com.rego.jorge.reusablerecycler.extensions.invisible
 import com.rego.jorge.reusablerecycler.extensions.visible
 import com.rego.jorge.reusablerecycler.main.ReusableRecycler
+import com.rego.jorge.reusablerecycler.main.StableIdElement
 import kotlinx.android.synthetic.main.row_container_layout.view.*
 
 
 /**
  * Created by jorge.rego.casas on 13/04/2018.
  */
-class ReusableAdapter<S : Any>(
+class ReusableAdapter<S : StableIdElement>(
         @LayoutRes private val rowLayout: Int,
         val onBind: (itemView: View, S, position: Int) -> Unit,
         val onClick: ((S, itemView: View) -> Unit)? = null,
         private var onEdit: ((S, Int) -> Unit)? = null,
         private var onRemove: ((S, Int) -> Unit)? = null,
         @ColorInt private val iconsColor: Int?
-) : BaseAdapter<ReusableRecycler.ReusableItem<S>, ReusableAdapter<S>.ReusableViewHolder>() {
+) : BaseAdapter<StableIdElement, ReusableRecycler.ReusableItem<S>, ReusableAdapter<S>.ReusableViewHolder>() {
 
     companion object {
         private const val SIDE_MARGIN = 16F

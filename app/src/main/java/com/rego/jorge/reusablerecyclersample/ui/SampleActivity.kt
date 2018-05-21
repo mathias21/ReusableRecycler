@@ -9,6 +9,7 @@ import com.rego.jorge.reusablerecyclersample.R
 import com.rego.jorge.reusablerecycler.extensions.invisible
 import com.rego.jorge.reusablerecycler.extensions.visible
 import com.rego.jorge.reusablerecycler.main.ReusableRecycler
+import com.rego.jorge.reusablerecycler.main.StableIdElement
 import kotlinx.android.synthetic.main.activity_sample.*
 import kotlinx.android.synthetic.main.item_sample_row2.view.*
 
@@ -91,4 +92,6 @@ class SampleActivity : AppCompatActivity() {
     }
 }
 
-data class Item(val name: String, val description: String)
+data class Item(val name: String, val description: String) : StableIdElement {
+    override fun getReusableId() = name.hashCode().toLong()
+}

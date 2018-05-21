@@ -2,12 +2,14 @@ package com.rego.jorge.reusablerecycler.adapter
 
 import android.support.v7.widget.RecyclerView
 import android.util.Log
+import com.rego.jorge.reusablerecycler.main.ReusableRecycler
+import com.rego.jorge.reusablerecycler.main.StableIdElement
 
 /**
  * Created by jorge.rego.casas on 27/07/2017.
  */
 
-abstract class BaseAdapter<S : Any, T : BaseViewHolder<S>> : RecyclerView.Adapter<T>() {
+abstract class BaseAdapter<R: StableIdElement, S : ReusableRecycler.ReusableItem<R>, T : BaseViewHolder<S>> : RecyclerView.Adapter<T>() {
 
     companion object {
         private val TAG = "BASEADAPTER"
@@ -25,10 +27,7 @@ abstract class BaseAdapter<S : Any, T : BaseViewHolder<S>> : RecyclerView.Adapte
         this.setHasStableIds(true)
     }
 
-    override fun getItemId(position: Int): Long {
-        checkForPosition(position)
-        return elementList[position].hashCode().toLong()
-    }
+    override fun getItemId(position: Int) = elementList[position].item.getReusableId()
 
     override fun onBindViewHolder(holder: T, position: Int) {
         checkForPosition(position)

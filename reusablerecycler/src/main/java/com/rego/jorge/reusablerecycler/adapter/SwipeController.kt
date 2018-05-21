@@ -5,17 +5,17 @@ import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.helper.ItemTouchHelper
 import android.support.v7.widget.helper.ItemTouchHelper.*
 import android.view.MotionEvent
-import com.rego.jorge.reusablerecycler.main.ReusableRecycler
+import com.rego.jorge.reusablerecycler.main.StableIdElement
 
 
 /**
  * Created by jorge.rego.casas on 16/04/2018.
  */
 
-class SwipeController<out S : Any>(private val buttonWidth: Float) : ItemTouchHelper.Callback() {
+class SwipeController<S : StableIdElement>(private val buttonWidth: Float) : ItemTouchHelper.Callback() {
 
     override fun getMovementFlags(recyclerView: RecyclerView, viewHolder: RecyclerView.ViewHolder): Int {
-        val adapter = recyclerView.adapter as ReusableAdapter<ReusableRecycler.ReusableItem<S>>
+        val adapter = recyclerView.adapter as ReusableAdapter<S>
         return if (adapter.elementList[viewHolder.adapterPosition].swipeBack) {
             makeMovementFlags(0, LEFT)
         } else {
